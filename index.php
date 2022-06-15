@@ -10,7 +10,7 @@
     <div class="row" id="formlogin">
         <div class="col-3"></div>
         <div class="col-6">
-            <form action="sesion.php" method="POST" >
+            <form action="home.php" method="POST" >
                 <div class="form-floating mb-3">
                     <input type="text" name="user" class="form-control" id="floatingInput" placeholder="name@example.com">
                     <label for="floatingInput">CORREO</label>
