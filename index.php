@@ -10,7 +10,7 @@
     <div class="row" id="formlogin">
         <div class="col-3"></div>
         <div class="col-6">
-            <form action="home.php" method="POST" >
+            <form action="https://webseminuevos.herokuapp.com/home.php" method="POST" >
                 <div class="form-floating mb-3">
                     <input type="text" name="user" class="form-control" id="floatingInput" placeholder="name@example.com">
                     <label for="floatingInput">CORREO</label>
@@ -20,7 +20,7 @@
                     <label for="floatingPassword">CONTRASEÑA</label>
                   </div>
                   <div id="botonlogin">
-                      <a href="home.php"><button type="submit" class="btn btn-dark">INGRESAR</button></a>
+                      <a href="https://webseminuevos.herokuapp.com/home.php"><button type="submit" class="btn btn-dark">INGRESAR</button></a>
                     
                     
                       
