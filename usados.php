@@ -71,66 +71,7 @@
     </div>
 
 
-    <div id="todo">
-      <div class="container">  
-        <h1 id="catalogo">
-          CATALOGO
-        </h1>
-        <div class="container">
-          <div class="row">
-
-          
-          <?php
-          include 'conection.php';
-
-          $query=pg_query($conexion,"SELECT * FROM CARROS");
-
-          
-          $cantidad=pg_num_rows($query);
-
-          if($cantidad>0){
-            while ($consulta = pg_fetch_array($query)){
-              echo '<div class="col-3">
-            
-                <div id="elemento">
-                  <div class="card" style="width: 18rem;">
-                    <img id="fotos" src="https://'.$consulta['foto'].'" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">'.$consulta['marca'].'&nbsp;'.$consulta['modelo'].'</h5>
-                      <div>'.$consulta['fecha'].'</div>
-                      <div>'.$consulta['km'].' Km</div>
-                      <div>'.$consulta['combustible'].'</div>
-                      <form action="cotizacion.php" method="POST">
-                      
-                      <a href="cotizacion.php"><button id="bcotizar" type="submit" name="cotizacion" value="'.$consulta['idcarros'].'" class="btn btn-primary">Cotizar</button></a>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-  
-              </div>';
-  
-            }
-
-          }else{
-            echo '<div>
-            <h3>No se encontraron resultados</h3>
-            </div>';
-            
-          }
-
-          
-          
-
-          ?>
-
-            
-
-        </div>
-        
-
-      </div>
-    </div>
+    
 
 
 
