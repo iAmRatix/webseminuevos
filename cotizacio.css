@@ -1,0 +1,72 @@
+body{
+    min-height: 100vh;
+}
+#arriba{
+    margin-top: 30px;
+    text-align: right;
+    
+    
+}
+#logo{
+    margin-top: 15px;
+}
+#top{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+#head{
+    background-color: grey;
+}
+#pad{
+    margin-left: -10px;
+}
+#franja{
+    background-color: grey;
+}
+
+#pagina{
+    background-color: grey;
+    max-width: 100%;
+}
+#abajo{
+    background-color: grey;
+    margin-top: 20px;
+}
+#todo{
+    min-height: 90vh;
+    
+}
+
+
+#catalogo{
+    margin-top: 50px;
+    
+}
+
+#elemento{
+    margin-top: 15px;
+    
+}
+
+#bcotizar{
+    margin-top: 13px;
+}
+
+#fotos{
+    height: 180px;
+}
+#filtros{
+  margin-top: 30px;
+}
+
+#nfranja{
+  background-color: black;
+}
+
+
+
+
+ 
+
