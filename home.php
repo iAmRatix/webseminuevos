@@ -31,33 +31,17 @@
                 </div>
                 <div class="col-6">
                     <div id="arriba">
-                        <?php
-                        include 'conection.php';
+                        
+                        
+                        <a id="top"><?php
+                        
+                        echo '<a>'.$_SESSION['nombre_usuario'].'<a>';
+            
+                      
+                    
+                    
           
-                        $query=pg_query($conexion,"SELECT * FROM USUARIOS");
-              
-                        
-                        $cantidad=pg_num_rows($query);
-              
-                        if($cantidad>0){
-                          while ($consulta = pg_fetch_array($query)){
-                            echo '<a>'.$_SESSION['nombre_usuario'].'<a>';
-                
-                          }
-              
-                        }else{
-                          echo '<a>
-                          <h5>No</h5>
-                          </a>';
-                          
-                        }
-              
-                        
-                        
-              
-                        ?>
-                        
-                        
+                    ?></a>
                         <a id="top" href="cerrar.php">CERRAR SESION</a>
                          
                     </div>
