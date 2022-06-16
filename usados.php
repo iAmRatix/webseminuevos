@@ -32,7 +32,7 @@
                 <div class="col-6">
                     <div id="arriba">
                         
-                        <a id="top" href="cerrar.php">CERRAR SESION</a>
+                        <a id="top" href="cerrar.php">CRRAR SESION</a>
                          
                     </div>
                 </div>
