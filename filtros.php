@@ -164,28 +164,28 @@
             </div>';
 
           }
-          }elseif($menor != 0 && $mayor == 0){
+          }elseif($menor != 0 && $mayor == ""){
           
 
 
           
           
-          }elseif($fecha != 0){
+          }elseif($menor != 0 && $mayor == ""){
           
 
-            
+
           
           
-          }elseif($fecha != 0){
+          }elseif($menor != 0 && $mayor == ""){
           
 
-            
+
           
           
-          }elseif($fecha != 0){
+          }elseif($menor != 0 && $mayor == ""){
           
 
-            
+
           
           
           }
