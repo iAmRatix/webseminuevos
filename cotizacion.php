@@ -35,7 +35,7 @@
 
 
 
-        <div id="centro" class="row">
+        <div id="centro" class="row justify-content-center">
           
           
             
@@ -61,6 +61,7 @@
                       
                         
                         
+                          <div class="col-3">
                           
                           <div class="card" style="width: 18rem;">
                                 <img id="fotos" src="https://'.$consulta['foto'].'" class="card-img-top" alt="...">
@@ -73,7 +74,7 @@
                                   
                                 </div>
                           </div>
-                        
+                          </div>
                         
                       
                     
