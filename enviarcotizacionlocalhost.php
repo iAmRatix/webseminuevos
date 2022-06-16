@@ -30,8 +30,8 @@ try {
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $html="<a>a</a>";
-    
+    $html="";
+    $_GET['php']=$html;
     $mail->Subject = 'Cotizacion';
     $mail->Body    = $html;
     
