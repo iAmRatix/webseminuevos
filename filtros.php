@@ -1,9 +1,9 @@
 <?php
 
   require 'conection.php';
+  session_start();
 
-
-  if($_SESSION['nombre_usuario']==""){
+  if($_SESSION['nombre_usuario']==''){
     
     header("location: index.php");
   }else{

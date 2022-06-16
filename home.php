@@ -1,7 +1,7 @@
 <?php
 
   require 'conection.php';
-
+  session_start();
 
   if($_SESSION['nombre_usuario']==''){
     
