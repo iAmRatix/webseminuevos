@@ -13,7 +13,7 @@
                 
                 <div class="col-6">
                     <div id="logo">
-                      <img src="https://i.ibb.co/KqfV6wc/logo2.png" alt="">
+                      <img src="logo2.png" alt="">
                     </div>
                 </div>
                 <div class="col-6">
@@ -81,8 +81,7 @@
 
           
           <?php
-          $conn_string = "host=ec2-52-73-184-24.compute-1.amazonaws.com port=5432 dbname=ddcpr3ice41jj2 		user=skqmfpwhqykpoz password=6998905991037b4bc858894d050dd235c3f674633e05605d7b75b4f387be1187";
-          $conexion = pg_connect($conn_string);
+          include 'conection.php';
           
           $query=pg_query($conexion,"SELECT * FROM CARROS");
 

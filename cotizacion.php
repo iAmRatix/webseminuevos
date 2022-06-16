@@ -13,7 +13,7 @@
                 
                 <div class="col-6">
                     <div id="logo">
-                    <img src="https://i.ibb.co/KqfV6wc/logo2.png" alt="">
+                    <img src="logo2.png" alt="">
                     </div>
                 </div>
                 

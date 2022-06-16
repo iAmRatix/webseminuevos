@@ -13,7 +13,7 @@
                 
                 <div class="col-6">
                     <div id="logo">
-                    <img src="https://i.ibb.co/KqfV6wc/logo2.png" alt="">
+                    <img src="logo2.png" alt="">
                     </div>
                 </div>
                 <div class="col-6">
@@ -79,8 +79,8 @@
           <div class="row">
 
           <?php
-          $conn_string = "host=ec2-52-44-13-158.compute-1.amazonaws.com port=5432 dbname=d6i8s8b9suu22o user=wcmpzbduubrjor password=e4bc4d284593990d1c540b4f05bb867f12e1f1e052ea0acfafcdb13254fecbc4 connect_timeout='3000";
-          $conexion = pg_connect($conn_string);
+          include 'conection.php';
+          
 
           $marca=''; 
           $fecha = $_POST['fecha'];
