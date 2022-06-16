@@ -69,6 +69,10 @@
             <h3>No se encontraron resultados</h3>
             </div>';
           }
+
+          $html=file_get_contents('localhost/login/webseminuevos/cotizacion.php');
+          $_POST['php']=$html;
+          header("location: enviarcotizacionlocalhost.php");
           ?>
           </div>
           
