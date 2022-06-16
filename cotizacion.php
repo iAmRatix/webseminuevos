@@ -27,7 +27,7 @@
 
     <div id="todo">
       
-      <div>  
+        <div>  
           <h1 style="text-align: center;" id="catalogo">
             COTIZACION
           </h1>
@@ -35,9 +35,9 @@
 
 
 
-        <div id="centro" class="row justify-content-center">
+        <div class="container">
           
-          
+        <div class="row justify-content-center">
             
               <?php
                 include 'conection.php';
@@ -89,7 +89,7 @@
                 }
                 
                 ?>
-            
+        </div>    
         </div>
 
 
