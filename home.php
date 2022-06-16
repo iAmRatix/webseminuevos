@@ -35,7 +35,7 @@
                         
                         <a id="top"><?php
                         
-                        echo '<a>'.$_SESSION['nombre_usuario'].'<a>';
+                        echo '<h5>'.$_SESSION['nombre_usuario'].'</h5>';
             
                       
                     
@@ -184,70 +184,7 @@
         
     </div>
 
-    <div id="filtros" class="container">
-      <div class="row">
-        <h2>Filtrar por KM</h2>
-      </div>
-
-
-      <form action="filtros.php" method="POST" > 
-      <div class="row">
-      
-
-      <div class="col-auto">
-        <div id="botonfiltrar">
-         
-          Mayor a
-        
-        </div>
-      </div>
-
-      <div class="col-auto">
-        <div id="botonfiltrar">
-         
-        
-        <input type="text" name="mayor" id="fecha" >
-        
-        
-        </div>
-      </div>
-      
-      <div class="col-auto">
-        <div id="botonfiltrar">
-         
-          Menor a
-        
-        </div>
-      </div>
-
-      <div class="col-auto">
-        <div id="botonfiltrar">
-
-        
-        <input type="text" name="menor" id="fecha" >
-
-        
-        </div>
-      </div>
-
-      <div class="col-auto">
-        <div id="botonfiltrar">
-         
-        <a href="filtros.php"><button name="km" type="submit" class="btn btn-dark">Filtrar</button></a>
-        
-        
-        </div>
-      </div>
-
-      </div>
-      
     
-      </form>
-
-
-      
-        
-    </div>
     
 
     

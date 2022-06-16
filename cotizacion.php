@@ -30,59 +30,67 @@
         <h1 style="text-align: center;" id="catalogo">
           COTIZACION
         </h1>
-        <div style="text-align: center;" class="container">
-          <div class="row">
-          
-          <div class="col-3">
-          </div>
+        <div class="row">
           
           
-          <?php
-          include 'conection.php';
-          $_SESSION['cotizacion']=$_POST['cotizacion'];
-          $cotizacion=$_SESSION['cotizacion'];
-          $query=pg_query($conexion,"SELECT * FROM CARROS WHERE IDCARROS='$cotizacion' ");
-          $cantidad=pg_num_rows($query);
-          if($cantidad>0){
-            while ($consulta = pg_fetch_array($query)){
-            $_SESSION['foto']=$consulta['foto'];
             
-            $_SESSION['marca']=$consulta['marca'];
-            $_SESSION['modelo']=$consulta['modelo'];
-            $_SESSION['fecha']=$consulta['fecha'];
-            $_SESSION['km']=$consulta['km'];
-            $_SESSION['combustible']=$consulta['combustible'];
-            $_SESSION['precio']=$consulta['precio'];
-              echo '<div id="elemento" class="col-6">
-            
-                <div >
-                  <div class="card" style="width: 18rem;">
-                    <img id="fotos" src="https://'.$consulta['foto'].'" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">'.$consulta['marca'].'&nbsp;'.$consulta['modelo'].'</h5>
-                      <div>'.$consulta['fecha'].'</div>
-                      <div>'.$consulta['km'].' Km</div>
-                      <div>'.$consulta['combustible'].'</div>
-                      <h5 class="card-title">MONTO A PAGAR : US$'.$consulta['precio'].'</h5>
+              <?php
+                include 'conection.php';
+                $_SESSION['cotizacion']=$_POST['cotizacion'];
+                $cotizacion=$_SESSION['cotizacion'];
+                $query=pg_query($conexion,"SELECT * FROM CARROS WHERE IDCARROS='$cotizacion' ");
+                $cantidad=pg_num_rows($query);
+                if($cantidad>0){
+                  while ($consulta = pg_fetch_array($query)){
+                  $_SESSION['foto']=$consulta['foto'];
+                  
+                  $_SESSION['marca']=$consulta['marca'];
+                  $_SESSION['modelo']=$consulta['modelo'];
+                  $_SESSION['fecha']=$consulta['fecha'];
+                  $_SESSION['km']=$consulta['km'];
+                  $_SESSION['combustible']=$consulta['combustible'];
+                  $_SESSION['precio']=$consulta['precio'];
+                    echo 
+                    '
+                    
                       
-                    </div>
-                  </div>
-                </div>
-  
-              </div>';
-            
-            }
-            
-            
+                        
+                        
+                          
+                          <div class="card" style="width: 18rem;">
+                                <img id="fotos" src="https://'.$consulta['foto'].'" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">'.$consulta['marca'].'&nbsp;'.$consulta['modelo'].'</h5>
+                                  <div>'.$consulta['fecha'].'</div>
+                                  <div>'.$consulta['km'].' Km</div>
+                                  <div>'.$consulta['combustible'].'</div>
+                                  <h5 class="card-title">MONTO A PAGAR : US$'.$consulta['precio'].'</h5>
+                                  
+                                </div>
+                          </div>
+                        
+                        
+                      
+                    
+                    ';
+                  
+                  }
+                  
+                  
 
-          }else{
+                }else{
+                  
+                }
+                
+                ?>
             
-          }
-          
-          ?>
-          </div>
-          
-          <div class="col-3">
+        </div>
+        <div style="text-align: center;" class="row">
+          <div id="botonlogin">
+            <a href="home.php"><button type="submit" class="btn btn-primary">VOLVER</button></a>
+                    
+                    
+                      
           </div>
           </div>
             
@@ -90,13 +98,13 @@
         </div>
         
 
-      </div>
+      
     </div>
 
 
 
 
-
+                 
 
 
 

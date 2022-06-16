@@ -32,7 +32,15 @@
                 </div>
                 <div class="col-6">
                     <div id="arriba">
+                    <a id="top"><?php
                         
+                        echo '<h5>'.$_SESSION['nombre_usuario'].'</h5>';
+            
+                      
+                    
+                    
+          
+                    ?></a>
                         <a id="top" href="cerrar.php">CERRAR SESION</a>
                          
                     </div>
@@ -161,10 +169,10 @@
 
 
     <div id="abajo">
-      <div>
-        <div id="pagina" class="row"> 
+      <div class="container" >
+        <div class="row"> 
           
-          <div class="col-4">
+          <div id="pagina" class="col-4">
             GRUPO 2
           </div>
           <div class="col-4">
