@@ -127,13 +127,15 @@
                       <form action="cotizacion.php" method="POST">
 
                       <a href="cotizacion.php"><button id="bcotizar" type="submit" name="cotizacion" value="'.$consulta['idcarros'].'" class="btn btn-primary">Cotizar</button></a>
+                      
                       </form>
                     </div>
                   </div>
                 </div>
 
               </div>';
-
+              
+              
             }
 
           }else{
@@ -143,7 +145,7 @@
             
             
             $query=pg_query($conexion,"SELECT * FROM CARROS WHERE FECHA='$fecha'");
-
+            
 
             $cantidad=pg_num_rows($query);
 
