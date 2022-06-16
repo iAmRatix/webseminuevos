@@ -183,7 +183,7 @@
         <div id="botonfiltrar">
          
         
-        <input type="text" value="" name="mayor" id="fecha" >
+        <input type="text" name="mayor" id="fecha" >
         
         
         </div>
@@ -201,7 +201,7 @@
         <div id="botonfiltrar">
 
         
-        <input type="text" value="" name="menor" id="fecha" >
+        <input type="text" name="menor" id="fecha" >
 
         
         </div>
