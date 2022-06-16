@@ -3,11 +3,11 @@
   require 'conection.php';
 
 
-  if($_SESSION['nombre_usuario']!=""){
+  if($_SESSION['nombre_usuario']!=$usuario){
     
-    
-  }else{
     header("location: index.php");
+  }else{
+    
     
   }
 
