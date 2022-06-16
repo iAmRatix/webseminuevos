@@ -87,7 +87,8 @@
 
           $marca=''; 
           $fecha = $_POST['fecha'];
-          
+          $mayor = $_POST['mayor'];
+          $menor = $_POST['menor'];
 
           if($fecha == 0){
             $marca = $_POST['marca'];
@@ -124,10 +125,10 @@
           }else{
           } 
             
-          }else{
+          }elseif($fecha != 0){
             
             
-            $query=pg_query($conexion,"SELECT * FROM CARROS WHERE FECHA='$fecha'");
+          $query=pg_query($conexion,"SELECT * FROM CARROS WHERE FECHA='$fecha'");
 
 
           $cantidad=pg_num_rows($query);
@@ -163,16 +164,31 @@
             </div>';
 
           }
+          }elseif($menor != 0 && $mayor == 0){
+          
+
+
+          
+          
+          }elseif($fecha != 0){
+          
+
+            
+          
+          
+          }elseif($fecha != 0){
+          
+
+            
+          
+          
+          }elseif($fecha != 0){
+          
+
+            
+          
+          
           }
-
-          
-
-
-          
-
-          
-          
-
           ?>
 
             

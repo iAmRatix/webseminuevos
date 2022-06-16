@@ -183,7 +183,7 @@
         <div id="botonfiltrar">
          
         
-        <input type="text" name="km" id="fecha" placeholder="km">
+        <input type="text" value="0" name="mayor" id="fecha" placeholder="mayor">
         
         
         </div>
@@ -201,7 +201,7 @@
         <div id="botonfiltrar">
 
         
-        <input type="text" name="km" id="fecha" placeholder="km">
+        <input type="text" value="0" name="menor" id="fecha" placeholder="menor">
 
         
         </div>
