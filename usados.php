@@ -3,7 +3,7 @@
   require 'conection.php';
 
   session_start();
-  if($_SESSION['nombre_usuario']==''){
+  if($_SESSION['nombre_usuario'] == null){
     
     header("location: index.php");
   }else{
