@@ -1,4 +1,17 @@
+<?php
 
+  require 'conection.php';
+
+
+  if($_SESSION['nombre_usuario']==""){
+    
+    header("location: index.php");
+  }else{
+    
+    
+  }
+
+?>
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="ho.css">
@@ -82,6 +95,7 @@
           <div class="row">
 
           <?php
+          
           include 'conection.php';
           
 
@@ -128,10 +142,10 @@
           }elseif($fecha != 0){
             
             
-          $query=pg_query($conexion,"SELECT * FROM CARROS WHERE FECHA='$fecha'");
+            $query=pg_query($conexion,"SELECT * FROM CARROS WHERE FECHA='$fecha'");
 
 
-          $cantidad=pg_num_rows($query);
+            $cantidad=pg_num_rows($query);
 
           if($cantidad>0){
             while ($consulta = pg_fetch_array($query)){
