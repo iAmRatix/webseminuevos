@@ -74,7 +74,7 @@
                                 <a class="nav-link" href="nuevos.php">Carros Nuevos</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="contactos.php">Contactos</a>
+                                <a class="nav-link" href="home.php">Contactos</a>
                               </li>
                               <li class="nav-item">
                                 <a class="nav-link" href="cerrar.php">Cerrar Sesion</a>
