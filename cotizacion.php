@@ -26,11 +26,16 @@
 
 
     <div id="todo">
-      <div class="container">  
-        <h1 style="text-align: center;" id="catalogo">
-          COTIZACION
-        </h1>
-        <div class="row">
+      
+      <div>  
+          <h1 style="text-align: center;" id="catalogo">
+            COTIZACION
+          </h1>
+        </div>
+
+
+
+        <div id="centro" class="row">
           
           
             
@@ -85,56 +90,60 @@
                 ?>
             
         </div>
-        <div style="text-align: center;" class="row">
+
+
+
+
+
+
+        <div style="text-align: center;" >
           <div id="botonlogin">
             <a href="home.php"><button type="submit" class="btn btn-primary">VOLVER</button></a>
-                    
-                    
-                      
-          </div>
-          </div>
             
-
+          </div>
         </div>
+              
+
         
-
-      
-    </div>
-
-
-
-
-                 
-
-
-
-
-
-
-
-    <div id="abajo">
-      <div class="container" >
-      
-        <div class="row"> 
           
-          <div id="pagina" class="col-4">
-            GRUPO 2
-          </div>
-          <div class="col-4">
-            2022
-          </div>
-          <div class="col-4">
-            <a style="color:black; text-decoration: none;" href="">Nosotros, Terminos y Condiciones</a>
-            
-          </div>
-          
-          
-        </div>
+
         
       </div>
+
+
+
+
+                
+
+
+
+
+
+
+
+      <div id="abajo">
+        <div class="container" >
+        
+          <div class="row"> 
+            
+            <div id="pagina" class="col-4">
+              GRUPO 2
+            </div>
+            <div class="col-4">
+              2022
+            </div>
+            <div class="col-4">
+              <a style="color:black; text-decoration: none;" href="">Nosotros, Terminos y Condiciones</a>
+              
+            </div>
+            
+            
+          </div>
+          
+        </div>
+      </div>
+    
     </div>
-    
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
      
