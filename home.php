@@ -174,7 +174,7 @@
       <div class="col-auto">
         <div id="botonfiltrar">
          
-          Entre
+          Mayor a
         
         </div>
       </div>
@@ -183,7 +183,7 @@
         <div id="botonfiltrar">
          
         
-        <input type="text" value="0" name="mayor" id="fecha" placeholder="mayor">
+        <input type="text" value="" name="mayor" id="fecha" >
         
         
         </div>
@@ -192,7 +192,7 @@
       <div class="col-auto">
         <div id="botonfiltrar">
          
-          y
+          Menor a
         
         </div>
       </div>
@@ -201,7 +201,7 @@
         <div id="botonfiltrar">
 
         
-        <input type="text" value="0" name="menor" id="fecha" placeholder="menor">
+        <input type="text" value="" name="menor" id="fecha" >
 
         
         </div>
