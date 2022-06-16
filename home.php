@@ -29,7 +29,7 @@
     </div>
 
     <div id="nfranja">
-    <div class="container">
+      <div class="container">
         <div class="row">
             <div class="col-1">
 
@@ -66,11 +66,7 @@
         </div>
         
 
-    </div>
-    </div>
-    
-    <div>
-      
+      </div>
     </div>
 
     <div id="filtros" class="container">
