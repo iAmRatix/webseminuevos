@@ -53,6 +53,9 @@
                               <li class="nav-item">
                                 <a class="nav-link" href="contactos.php">Contactos</a>
                               </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="cerrar.php">Cerrar Sesion</a>
+                              </li>
                               
                             </ul>
                           </div>
