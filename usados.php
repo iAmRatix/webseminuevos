@@ -5,6 +5,7 @@
   session_start();
   if($_SESSION['nombre_usuario'] == null){
     
+    
     header("location: index.php");
   }else{
     

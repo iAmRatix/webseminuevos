@@ -31,6 +31,9 @@
                 </div>
                 <div class="col-6">
                     <div id="arriba">
+                        <?php
+                        '<a>'.$_SESSION['nombre_usuario'].'</a>'
+                        ?>
                         
                         <a id="top" href="cerrar.php">CERRAR SESION</a>
                          
