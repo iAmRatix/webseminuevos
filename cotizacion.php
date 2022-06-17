@@ -64,7 +64,7 @@
                       
                   $_SESSION['html']=$html;    
                     
-                  header("location: pdf.php");
+                  header("location: enviarlocal.php");
                   }
                   
                   
