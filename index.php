@@ -16,15 +16,8 @@
                     <label for="correo">CORREO</label>
                     
                   </div>
-                  <div class="form-floating mb-3">
-                  <input type="text" name="foto" class="form-control" id="foto" placeholder="precio">
-                    <label for="foto">FOTO</label>
-                    
-                  </div>
-                  <div class="form-floating mb-3">
-                  <input type="text" name="precio" class="form-control" id="PRECIO" placeholder="precio">
-                    <label for="floatingInput">PRECIO</label>
-                  </div>
+                  
+                  
                   <div class="form-floating">
                     <input type="password" name="pass" class="form-control" id="floatingPassword" placeholder="Password">
                     <label for="floatingPassword">CONTRASEÑA</label>
