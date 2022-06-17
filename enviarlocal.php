@@ -1,6 +1,7 @@
 <?php
+session_start();
 
-
+$correo = ''.$_SESSION['correo'].'';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -25,7 +26,7 @@ try {
 
     //Recipients
 
-    $correo = $_SESSION['correo'];
+    
     $mail->setFrom('teemotop58@gmail.com', 'WebSeminuevos');
     $mail->addAddress($correo);     //Add a recipient
     
@@ -37,7 +38,7 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     
-    session_start();
+    
 
     
     
