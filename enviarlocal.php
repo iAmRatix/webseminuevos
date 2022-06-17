@@ -25,7 +25,7 @@ try {
 
     //Recipients
     $mail->setFrom('teemotop58@gmail.com', 'WebSeminuevos');
-    $mail->addAddress($_SESSION['html']);     //Add a recipient
+    $mail->addAddress($_SESSION['correo']);     //Add a recipient
     
 
     
