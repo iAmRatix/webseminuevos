@@ -1,10 +1,11 @@
-<?php 
+    <?php 
 
 // Guardamos el contenido de contenido.php en la variable html
-ob_start();
-require "a.php";
-$html = ob_get_clean();
 
+session_start();
+
+
+$html = $_SESSION['html'];
 
 
 // include autoloader
@@ -23,8 +24,14 @@ $dompdf->setPaper('A4', 'portrait');
 // Render the HTML as PDF
 $dompdf->render();
 
+
+$_SESSION['dompdf'] = $dompdf;
+header("location: enviarlocal.php");
+
+
+
 // Output the generated PDF to Browser
-$dompdf->stream();
+// $dompdf->stream();
 
 
 

@@ -26,18 +26,20 @@ try {
     $mail->addAddress('pccarrillop@gmail.com', 'WebSeminuevos');     //Add a recipient
     
 
-    //Attachments
-    $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
-    $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
+    
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+    $mail->Subject = 'Cotizacion Solicitada';
 
+    $html = '<div id="div">
+    <img id="fotos" src="https://www.revistaturbo.com/sites/default/files/forester.jpg" class="card-img-top" alt="...">
+
+    </div>';
+
+    $mail->Body    = $html;
+    
     
 
 

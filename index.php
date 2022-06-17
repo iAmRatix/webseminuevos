@@ -12,12 +12,23 @@
         <div class="col-6">
             <form action="sesion.php" method="POST" >
                 <div class="form-floating mb-3">
-                    <input type="text" name="user" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">CORREO</label>
+                    <input type="text" name="user" class="form-control" id="correo" placeholder="name@example.com">
+                    <label for="correo">CORREO</label>
+                    
+                  </div>
+                  <div class="form-floating mb-3">
+                  <input type="text" name="foto" class="form-control" id="foto" placeholder="precio">
+                    <label for="foto">FOTO</label>
+                    
+                  </div>
+                  <div class="form-floating mb-3">
+                  <input type="text" name="precio" class="form-control" id="PRECIO" placeholder="precio">
+                    <label for="floatingInput">PRECIO</label>
                   </div>
                   <div class="form-floating">
                     <input type="password" name="pass" class="form-control" id="floatingPassword" placeholder="Password">
                     <label for="floatingPassword">CONTRASEÑA</label>
+                    
                   </div>
                   <div id="botonlogin">
                       <a href="sesion.php"><button type="submit" class="btn btn-dark">INGRESAR</button></a>

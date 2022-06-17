@@ -1,4 +1,6 @@
 <?php
+
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -28,25 +30,41 @@ try {
 
     
 
+    
+    
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    session_start();  
-    $html=$_SESSION['cotizacion'];
     
+    session_start();
+
+    
+    
+    $html = $_SESSION['html'];
+
+    $pdf = $_SESSION['dompdf'];
+
     $mail->Subject = 'Cotizacion';
     $mail->Body    = $html;
+   
     
+    
+   
+    $mail->AltBody = $pdf;
 
     
 
 
-    
+        
 
 
 
     $mail->send();
-    echo 'Message has been sent';
+    
     header("location: home.php");
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
+
+
+
+

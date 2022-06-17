@@ -1,15 +1,6 @@
+<div id="div">
+    <img id="fotos" src="https://www.revistaturbo.com/sites/default/files/forester.jpg" class="card-img-top" alt="...">
 
-<?php
-
-session_start();
-
-
-
-echo '<a>'.$_SESSION['nombre_usuario'].'<a>';
-
-echo '<a>'.$_SESSION['marca'].'<a>';
+</div>
 
 
-
-
-?>
