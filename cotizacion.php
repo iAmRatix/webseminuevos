@@ -64,7 +64,7 @@
                       
                   $_SESSION['html']=$html;    
                     
-                  header("location: enviarlocal.php");
+                  header("location: enviarcotizacion.php");
                   }
                   
                   

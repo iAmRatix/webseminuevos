@@ -44,15 +44,15 @@ try {
     
     $html = $_SESSION['html'];
 
-    $pdf = $_SESSION['dompdf'];
+    
 
-    $mail->Subject = 'Cotizacion';
+    $mail->Subject = 'COTIZACION';
     $mail->Body    = $html;
    
     
     
    
-    $mail->AltBody = $pdf;
+    
 
     
 
